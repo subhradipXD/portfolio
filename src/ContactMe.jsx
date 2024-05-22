@@ -11,6 +11,9 @@ import { BsSend } from "react-icons/bs";
 const ContactMe = () => {
   return (
     <div className="min-h-screen flex items-center justify-center md:mt-0">
+      <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-105 animate-pulse">
+        Contact Me
+      </h2>
       <section id="section7" className="p-8 rounded-lg w-full max-w-lg">
         <form action="" className="flex flex-col gap-3">
           <input
