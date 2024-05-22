@@ -7,11 +7,14 @@ import MySkills from "./MySkills";
 import ContactMe from "./ContactMe";
 import resume from "./assets/Subhradip Das CV.pdf";
 
+import { CiMenuFries } from "react-icons/ci";
+// import { CiMenuBurger } from "react-icons/ci";
+
 function App() {
   return (
     <div className="bg-gradient-to-t from-fuchsia-900 to-black min-h-screen">
-      <nav className="fixed top-0 w-full bg-black text-white z-10">
-        <ul className="flex justify-center space-x-4 p-4 group">
+      <nav className="fixed top-0 w-full bg-transparent text-white z-10">
+        <ul className="hidden md:flex justify-center space-x-4 p-4 group">
           <li className="nav-item group-hover:blur-sm hover:!blur-none transition-all duration-300">
             <Link
               activeClass="active"
@@ -78,17 +81,13 @@ function App() {
             </Link>
           </li>
           <li className="nav-item group-hover:blur-sm hover:!blur-none transition-all duration-300">
-            <Link
-              activeClass="active"
+            <a
               className="cursor-pointer p-2 rounded"
-              to="section6"
-              spy={true}
-              smooth={true}
               offset={-70}
-              duration={500}
+              href={resume}
             >
               Resume
-            </Link>
+            </a>
           </li>
           <li className="nav-item group-hover:blur-sm hover:!blur-none transition-all duration-300">
             <Link
@@ -104,6 +103,10 @@ function App() {
             </Link>
           </li>
         </ul>
+        <button className="nav-item transition-all duration-300 p-5 md:hidden absolute right-0">
+          <CiMenuFries />
+          {/* <CiMenuBurger /> */}
+        </button>
       </nav>
 
       <div className="pt-16">
