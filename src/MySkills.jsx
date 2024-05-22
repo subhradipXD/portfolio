@@ -14,7 +14,10 @@ import { FaBootstrap } from "react-icons/fa";
 
 const MySkills = () => {
   return (
-    <section id="section5" className="p-8 md:p-0 text-white">
+    <section
+      id="section5"
+      className="p-8 text-white items-center justify-center"
+    >
       <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-105 animate-pulse">
         My Skills
       </h2>

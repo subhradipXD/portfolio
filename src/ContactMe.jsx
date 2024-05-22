@@ -10,11 +10,11 @@ import { BsSend } from "react-icons/bs";
 
 const ContactMe = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center md:mt-0">
-      <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-105 animate-pulse">
-        Contact Me
-      </h2>
+    <div className="min-h-screen flex items-center justify-center">
       <section id="section7" className="p-8 rounded-lg w-full max-w-lg">
+        <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-105 ">
+          Contact Me
+        </h2>
         <form action="" className="flex flex-col gap-3">
           <input
             type="text"
@@ -92,7 +92,7 @@ const ContactMe = () => {
               />
             </a>
             <a
-              href="https://www.instagram.com/bhin\_\_desi\_\_tara/"
+              href="https://www.instagram.com/bhin__desi__tara/"
               className="mt-5"
             >
               <FaInstagram
