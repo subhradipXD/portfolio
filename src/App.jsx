@@ -8,13 +8,28 @@ import ContactMe from "./ContactMe";
 import resume from "./assets/Subhradip Das CV.pdf";
 
 import { CiMenuFries } from "react-icons/ci";
-// import { CiMenuBurger } from "react-icons/ci";
+import { TfiClose } from "react-icons/tfi";
+import { useState } from "react";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="bg-gradient-to-t from-fuchsia-900 to-black min-h-screen">
       <nav className="fixed top-0 w-full bg-transparent text-white z-10">
-        <ul className="hidden md:flex justify-center space-x-4 p-4 group">
+        <ul
+          className={`md:flex justify-center space-x-4 p-4 group ${
+            isMenuOpen ? "block" : "hidden"
+          } md:block`}
+        >
           <li className="nav-item group-hover:blur-sm hover:!blur-none transition-all duration-300">
             <Link
               activeClass="active"
@@ -24,6 +39,7 @@ function App() {
               smooth={true}
               offset={-70}
               duration={500}
+              onClick={closeMenu}
             >
               Greetings
             </Link>
@@ -37,6 +53,7 @@ function App() {
               smooth={true}
               offset={-70}
               duration={500}
+              onClick={closeMenu}
             >
               Hi!
             </Link>
@@ -50,6 +67,7 @@ function App() {
               smooth={true}
               offset={-70}
               duration={500}
+              onClick={closeMenu}
             >
               My Works
             </Link>
@@ -63,6 +81,7 @@ function App() {
               smooth={true}
               offset={-70}
               duration={500}
+              onClick={closeMenu}
             >
               Education
             </Link>
@@ -76,6 +95,7 @@ function App() {
               smooth={true}
               offset={-70}
               duration={500}
+              onClick={closeMenu}
             >
               My Skills
             </Link>
@@ -98,14 +118,17 @@ function App() {
               smooth={true}
               offset={-70}
               duration={500}
+              onClick={closeMenu}
             >
               Contact Me
             </Link>
           </li>
         </ul>
-        <button className="nav-item transition-all duration-300 p-5 md:hidden absolute right-0">
-          <CiMenuFries />
-          {/* <CiMenuBurger /> */}
+        <button
+          className="nav-item transition-all duration-300 p-5 md:hidden absolute right-0"
+          onClick={toggleMenu}
+        >
+          {isMenuOpen ? <TfiClose /> : <CiMenuFries />}
         </button>
       </nav>
 
