@@ -25,7 +25,7 @@ function App() {
               offset={-70}
               duration={500}
             >
-              Welcome
+              Greetings
             </Link>
           </li>
           <li className="nav-item group-hover:blur-sm hover:!blur-none transition-all duration-300">

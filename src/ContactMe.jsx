@@ -10,7 +10,7 @@ import { BsSend } from "react-icons/bs";
 
 const ContactMe = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center md:mt-0">
       <section id="section7" className="p-8 rounded-lg w-full max-w-lg">
         <form action="" className="flex flex-col gap-3">
           <input
@@ -35,37 +35,67 @@ const ContactMe = () => {
             </button>
           </div>
         </form>
-        <div className="flex justify-center gap-20 mt-6">
-          <div className="flex flex-col">
-            <a href="">
-              <FaGithub className="text-5xl text-gray-900 hover:text-black" />
+        <div className="flex justify-center gap-10 mt-6 flex-wrap">
+          <div className="flex flex-col items-center">
+            <a href="https://github.com/subhradipXD">
+              <FaGithub
+                className="text-gray-900 hover:text-black animate-bounce hover:animate-pulse"
+                size={48}
+              />
             </a>
-            <a href="" className="mt-5">
-              <ImLinkedin className="text-5xl text-blue-700 hover:text-blue-900" />
-            </a>
-          </div>
-          <div className="flex flex-col">
-            <a href="">
-              <BiLogoGmail className="text-5xl text-red-500 hover:text-red-700" />
-            </a>
-            <a href="" className="mt-5">
-              <FaPhoneAlt className="text-5xl text-green-500 hover:text-green-700" />
-            </a>
-          </div>
-          <div className="flex flex-col">
-            <a href="">
-              <FaXTwitter className="text-5xl text-blue-400 hover:text-blue-600" />
-            </a>
-            <a href="" className="mt-5">
-              <ImWhatsapp className="text-5xl text-green-600 hover:text-green-800" />
+            <a
+              href="https://www.linkedin.com/in/subhradip-das-2000s69/"
+              className="mt-5"
+            >
+              <ImLinkedin
+                className="text-blue-700 hover:text-blue-900 animate-bounce hover:animate-pulse"
+                size={48}
+              />
             </a>
           </div>
-          <div className="flex flex-col">
-            <a href="">
-              <FaFacebookF className="text-5xl text-blue-600 hover:text-blue-800" />
+          <div className="flex flex-col items-center">
+            <a href="mailto:subhradipdas6969@gmail.com">
+              <BiLogoGmail
+                className="text-red-500 hover:text-red-700 animate-bounce hover:animate-pulse w-auto "
+                size={48}
+              />
             </a>
-            <a href="" className="mt-5">
-              <FaInstagram className="text-5xl text-pink-500 hover:text-pink-700" />
+            <a href="tel:+919635760319" className="mt-5">
+              <FaPhoneAlt
+                className="text-green-500 hover:text-green-700 animate-bounce hover:animate-pulse w-auto "
+                size={48}
+              />
+            </a>
+          </div>
+          <div className="flex flex-col items-center">
+            <a href="https://x.com/Subhradip2000?t=bkawPXYen5ey9rIlhcRlbA&s=08">
+              <FaXTwitter
+                className="text-blue-400 hover:text-blue-600 animate-bounce hover:animate-pulse w-auto"
+                size={48}
+              />
+            </a>
+            <a href="https://wa.me/9635760319" className="mt-5">
+              <ImWhatsapp
+                className="text-green-600 hover:text-green-800 animate-bounce hover:animate-pulse w-auto"
+                size={48}
+              />
+            </a>
+          </div>
+          <div className="flex flex-col items-center">
+            <a href="https://www.facebook.com/profile.php?id=100085587863785">
+              <FaFacebookF
+                className="text-blue-600 hover:text-blue-800 animate-bounce hover:animate-pulse w-auto"
+                size={48}
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/bhin\_\_desi\_\_tara/"
+              className="mt-5"
+            >
+              <FaInstagram
+                className="text-pink-500 hover:text-pink-700 animate-bounce hover:animate-pulse w-auto"
+                size={48}
+              />
             </a>
           </div>
         </div>
