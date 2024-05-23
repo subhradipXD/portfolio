@@ -7,7 +7,7 @@ const MyWorks = () => {
         </h2>
         <div className="flex mt-20 flex-col md:flex-row">
           <div className="w-full md:w-1/2 pr-4 mb-8 md:mb-0">
-            <h2 className="font-bold text-center mb-8 transition-all duration-300 text-black hover:text-white hover:scale-105 text-3xl">
+            <h2 className="font-bold text-center mb-8 transition-all duration-300 text-white hover:scale-105 text-3xl">
               Academic Projects
             </h2>
             <div className="bg-transparent p-4 rounded-lg shadow-lg animate-fade-in">
@@ -45,7 +45,7 @@ const MyWorks = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 pl-4">
-            <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 text-black hover:text-white hover:scale-105 text-shadow">
+            <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 text-white hover:scale-105 text-shadow">
               Personal Projects
             </h2>
             <div className="bg-transparent p-4 rounded-lg shadow-lg animate-fade-in">
