@@ -6,7 +6,8 @@ import Education from "./Education";
 import MySkills from "./MySkills";
 import ContactMe from "./ContactMe";
 import resume from "./assets/Subhradip Das CV.pdf";
-
+import ReactAudioPlayer from "react-audio-player";
+import song from "./assets/WhatsApp Audio 2024-05-23 at 14.11.55_d9ca3c52.mp3";
 import { CiMenuFries } from "react-icons/ci";
 import { TfiClose } from "react-icons/tfi";
 import { useState } from "react";
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="bg-gradient-to-t from-fuchsia-900 to-black min-h-screen">
+      <ReactAudioPlayer src={song} autoPlay loop />
       <nav className="fixed top-0 w-full bg-transparent text-white z-10">
         <ul
           className={`md:flex justify-center space-x-4 p-4 group ${
