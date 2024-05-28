@@ -1,8 +1,11 @@
 const Education = () => {
   return (
     <div>
-      <section id="section4" className="min-h-screen p-8 text-white ">
-        <h2 className="text-4xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-105">
+      <section
+        id="section4"
+        className="min-h-screen p-8 text-white overflow-hidden"
+      >
+        <h2 className="text-4xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-125">
           My Education
         </h2>
         <div className="flex flex-col md:flex-row justify-center">

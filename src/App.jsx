@@ -8,13 +8,14 @@ import ContactMe from "./ContactMe";
 import resume from "./assets/Subhradip Das CV.pdf";
 import ReactAudioPlayer from "react-audio-player";
 import song from "./assets/WhatsApp Audio 2024-05-23 at 14.11.55_d9ca3c52.mp3";
-import { CiMenuFries } from "react-icons/ci";
+import { CiMenuBurger } from "react-icons/ci";
 import { TfiClose } from "react-icons/tfi";
 import { useState } from "react";
+import { motion, useScroll } from "framer-motion";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const { scrollYProgress } = useScroll();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -25,14 +26,24 @@ function App() {
 
   return (
     <div className="bg-gradient-to-t from-fuchsia-900 to-black min-h-screen">
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-blue-900 origin-left z-50"
+        style={{ scaleX: scrollYProgress }}
+      />
       <ReactAudioPlayer src={song} autoPlay loop />
       <nav className="fixed top-0 w-full bg-transparent text-white z-10">
-        <ul
-          className={`md:flex justify-center space-x-4 p-4 group ${
-            isMenuOpen ? "block" : "hidden"
-          } md:block`}
+        <button
+          className="nav-item transition-all duration-300 p-5 md:hidden fixed left-1/2 transform -translate-x-1/2"
+          onClick={toggleMenu}
         >
-          <li className="nav-item group-hover:blur-sm hover:!blur-none transition-all duration-300">
+          {isMenuOpen ? <TfiClose /> : <CiMenuBurger />}
+        </button>
+        <ul
+          className={`font-kalam md:flex justify-center space-x-4 p-4 group md:items-center ${
+            isMenuOpen ? "flex flex-col items-center mt-10" : "hidden"
+          } md:flex`}
+        >
+          <li className="nav-item group-hover:blur-sm hover:!blur-none transition-all duration-300 ">
             <Link
               activeClass="active"
               className="cursor-pointer p-2 rounded"
@@ -126,12 +137,6 @@ function App() {
             </Link>
           </li>
         </ul>
-        <button
-          className="nav-item transition-all duration-300 p-5 md:hidden absolute right-0"
-          onClick={toggleMenu}
-        >
-          {isMenuOpen ? <TfiClose /> : <CiMenuFries />}
-        </button>
       </nav>
 
       <div className="pt-16">

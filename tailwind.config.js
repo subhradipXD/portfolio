@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "comic-neue": ['"Comic Neue"', "cursive"],
+        "roboto-serif": ['"Roboto Serif"', "serif"],
+        kalam: ["Kalam"],
+        handlee: ["Handlee"],
+      },
+    },
   },
   variants: {
     extend: {

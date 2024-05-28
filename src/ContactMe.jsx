@@ -51,7 +51,7 @@ const ContactMe = () => {
         </div>
       )}
       <section id="section7" className="p-8 rounded-lg w-full max-w-lg">
-        <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-105">
+        <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-125">
           Contact Me
         </h2>
         <form
@@ -79,7 +79,7 @@ const ContactMe = () => {
               rows={4}
               className="p-3 border text-white border-black rounded-tl rounded-tr rounded-bl-none rounded-br-none focus:outline-none focus:ring-2 focus:ring-blue-500 bg-transparent w-full"
             ></textarea>
-            <button className="absolute bottom-0 right-0 transform translate-y-1/3 translate-x-1/2 p-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button className="absolute bottom-0 right-0 transform translate-y-1/3 translate-x-1/2 p-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:scale-125">
               <BsSend className="text-xl" />
             </button>
           </div>
@@ -88,7 +88,7 @@ const ContactMe = () => {
           <div className="flex flex-col items-center">
             <a href="https://github.com/subhradipXD">
               <FaGithub
-                className="text-gray-900 hover:text-black animate-bounce hover:animate-pulse"
+                className="text-gray-900 hover:text-black animate-bounce hover:animate-pulse hover:scale-125"
                 size={48}
               />
             </a>
@@ -97,7 +97,7 @@ const ContactMe = () => {
               className="mt-5"
             >
               <ImLinkedin
-                className="text-blue-700 hover:text-blue-900 animate-bounce hover:animate-pulse"
+                className="text-blue-700 hover:text-blue-900 animate-bounce hover:animate-pulse hover:scale-125"
                 size={48}
               />
             </a>
@@ -105,13 +105,13 @@ const ContactMe = () => {
           <div className="flex flex-col items-center">
             <a href="mailto:subhradipdas6969@gmail.com">
               <BiLogoGmail
-                className="text-red-500 hover:text-red-700 animate-bounce hover:animate-pulse w-auto"
+                className="text-red-500 hover:text-red-700 animate-bounce hover:animate-pulse hover:scale-125"
                 size={48}
               />
             </a>
             <a href="tel:+919635760319" className="mt-5">
               <FaPhoneAlt
-                className="text-green-500 hover:text-green-700 animate-bounce hover:animate-pulse w-auto"
+                className="text-green-500 hover:text-green-700 animate-bounce hover:animate-pulse hover:scale-125"
                 size={48}
               />
             </a>
@@ -119,13 +119,13 @@ const ContactMe = () => {
           <div className="flex flex-col items-center">
             <a href="https://x.com/Subhradip2000?t=bkawPXYen5ey9rIlhcRlbA&s=08">
               <FaXTwitter
-                className="text-blue-400 hover:text-blue-600 animate-bounce hover:animate-pulse w-auto"
+                className="text-blue-400 hover:text-blue-600 animate-bounce hover:animate-pulse hover:scale-125"
                 size={48}
               />
             </a>
             <a href="https://wa.me/9635760319" className="mt-5">
               <ImWhatsapp
-                className="text-green-600 hover:text-green-800 animate-bounce hover:animate-pulse w-auto"
+                className="text-green-600 hover:text-green-800 animate-bounce hover:animate-pulse hover:scale-125"
                 size={48}
               />
             </a>
@@ -133,7 +133,7 @@ const ContactMe = () => {
           <div className="flex flex-col items-center">
             <a href="https://www.facebook.com/profile.php?id=100085587863785">
               <FaFacebookF
-                className="text-blue-600 hover:text-blue-800 animate-bounce hover:animate-pulse w-auto"
+                className="text-blue-600 hover:text-blue-800 animate-bounce hover:animate-pulse hover:scale-125"
                 size={48}
               />
             </a>
@@ -142,7 +142,7 @@ const ContactMe = () => {
               className="mt-5"
             >
               <FaInstagram
-                className="text-pink-500 hover:text-pink-700 animate-bounce hover:animate-pulse w-auto"
+                className="text-pink-500 hover:text-pink-700 animate-bounce hover:animate-pulse hover:scale-125"
                 size={48}
               />
             </a>

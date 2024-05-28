@@ -9,7 +9,7 @@ const Welcome = () => {
     >
       <div className="md:w-1/2 text-center md:text-left md:ml-10">
         <h1
-          className="text-5xl font-bold mb-4"
+          className="text-5xl font-bold mb-4 font-comic-neue"
           style={{ fontWeight: "normal" }}
         >
           Life is simple{" "}
@@ -25,7 +25,7 @@ const Welcome = () => {
             />
           </span>
         </h1>
-        <p className="text-lg mb-8">
+        <p className="text-lg mb-8 font-handlee">
           Hi! 👋 I'm Subhradip, a Full Stack Web Sorcerer conjuring captivating
           digital realms where imagination takes flight. With spells of
           front-end enchantment and back-end wizardry, I sculpt immersive

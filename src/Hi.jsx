@@ -17,7 +17,7 @@ const Hi = () => {
         </div>
         <div className="md:w-1/2 md:mr-10 text-center md:text-left">
           <h1
-            className="text-5xl font-bold mb-4"
+            className="text-5xl font-bold mb-4 font-comic-neue"
             style={{ fontWeight: "normal" }}
           >
             Life is simple{" "}
@@ -33,7 +33,7 @@ const Hi = () => {
               />
             </span>
           </h1>
-          <p className="text-lg mb-8">
+          <p className="text-lg mb-8 font-handlee">
             Welcome, fellow code explorers! 🌍 I'm Subhradip, a Full Stack Web
             Sorcerer on a quest to craft captivating digital realms. With
             front-end enchantment and back-end wizardry, I weave immersive
