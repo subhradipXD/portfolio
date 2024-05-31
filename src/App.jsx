@@ -33,14 +33,14 @@ function App() {
       <ReactAudioPlayer src={song} autoPlay loop />
       <nav className="fixed top-0 w-full bg-transparent text-white z-10">
         <button
-          className="nav-item transition-all duration-300 p-5 md:hidden fixed left-1/2 transform -translate-x-1/2"
+          className="nav-item transition-all duration-300 p-5 md:hidden fixed "
           onClick={toggleMenu}
         >
           {isMenuOpen ? <TfiClose /> : <CiMenuBurger />}
         </button>
         <ul
           className={`font-kalam md:flex justify-center space-x-4 p-4 group md:items-center ${
-            isMenuOpen ? "flex flex-col items-center mt-10" : "hidden"
+            isMenuOpen ? "flex flex-col mt-10" : "hidden"
           } md:flex`}
         >
           <li className="nav-item group-hover:blur-sm hover:!blur-none transition-all duration-300 ">
