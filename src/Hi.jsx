@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Typewriter } from "react-simple-typewriter";
 import myImg from "./assets/IMG_20230910_004859.jpg";
 
