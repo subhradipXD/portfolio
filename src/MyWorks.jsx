@@ -172,7 +172,7 @@ const MyWorks = () => {
                   description="A web based tic-tac-toe game"
                   technologies={["React", "Javascript", "CSS"]}
                   direction="right"
-                  liveLink=" https://mellifluous-hamster-f30d1b.netlify.app/"
+                  liveLink=" https://tic-tac-toe-silk-pi.vercel.app/"
                   codeLink="https://github.com/subhradipXD/tic-tac-toe"
                 />
                 <ProjectItem
@@ -180,7 +180,7 @@ const MyWorks = () => {
                   description="A simple website using open-weather api to check your city's weather."
                   technologies={["React", "Javascript", "Bootstrap"]}
                   direction="right"
-                  liveLink="weather-app-azure-eta.vercel.app/"
+                  liveLink="https://weather-app-azure-eta.vercel.app/"
                   codeLink="https://github.com/subhradipXD/weather-app"
                 />
                 <ProjectItem
