@@ -5,7 +5,7 @@ import MyWorks from "./MyWorks";
 import Education from "./Education";
 import MySkills from "./MySkills";
 import ContactMe from "./ContactMe";
-import resume from "./assets/Subhradip Das CV.pdf";
+import resume from "./assets/Subhradip Das CV_03_06.pdf";
 import ReactAudioPlayer from "react-audio-player";
 import song from "./assets/WhatsApp Audio 2024-05-23 at 14.11.55_d9ca3c52.mp3";
 import { CiMenuBurger } from "react-icons/ci";
