@@ -39,11 +39,11 @@ const ContactMe = () => {
     <div className="min-h-screen flex items-center justify-center">
       {popupVisible && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div className="bg-black p-5 rounded-lg shadow-lg text-center">
-            <p className="mb-3 text-white">{popupMessage}</p>
+          <div className="backdrop-blur-sm bg-white/30 text-black p-5 rounded-lg shadow-lg text-center">
+            <p className="mb-3">{popupMessage}</p>
             <button
               onClick={() => setPopupVisible(false)}
-              className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600"
+              className="bg-blue-700 text-white px-2 py-1 rounded hover:bg-blue-800"
             >
               Close
             </button>
@@ -65,15 +65,18 @@ const ContactMe = () => {
             name="user_name"
             placeholder="Name"
             className="p-3 border text-white border-black rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-transparent"
+            required
           />
           <input
             type="email"
             name="user_email"
             placeholder="Your @Email"
             className="p-3 border text-white border-black rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-transparent"
+            required
           />
           <div className="relative">
             <textarea
+              required
               name="message"
               placeholder="Your Message"
               rows={4}

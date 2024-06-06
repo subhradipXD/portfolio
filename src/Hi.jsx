@@ -35,7 +35,11 @@ const Hi = () => {
             </span>
           </h1>
           <p className="text-lg mb-8 font-handlee">
-            Salutations, intrepid voyagers of the web! 👋 I'm Subhradip, your friendly neighborhood coder here to extend a hearty "Hi" as you grace my digital domain. Whether you're a seasoned developer or a curious newcomer, I'm thrilled to connect with you amidst the vast expanse of the internet. Let's embark on this coding adventure together and make waves in the ever-evolving landscape of technology!          </p>
+            Salutations, intrepid voyagers of the web!
+            👋 I'm your friendly neighborhood coder here to extend a hearty Welcome as you grace my digital domain.
+            Whether you're a seasoned developer or a curious newcomer, I'm thrilled to connect with you amidst the vast expanse of the internet.
+            Let's embark on this coding adventure together and make waves in the ever-evolving landscape of technology!
+          </p>
         </div>
       </section>
     </>

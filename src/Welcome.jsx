@@ -27,11 +27,13 @@ const Welcome = () => {
           </span>
         </h1>
         <p className="text-lg mb-8 font-handlee">
-          Welcome to my digital abode!
-          🚀 As you embark on your journey through the vast expanse of the internet,
-          allow me to extend a warm greeting to you, fellow traveler. I'm Subhradip,
-          your guide through the realm of code and creativity. Together,
-          let's explore the endless possibilities of the digital universe and create magic with every line of code.
+
+          Greetings, digital voyagers!
+
+          I'm Subhradip Das, a seasoned navigator of the digital realm, armed with a BSC in Computer Science Honors (2022) and a Master's in Computer Application (2024). My passion lies in the enchanting world of full-stack web development, where innovation meets functionality. Let's embark on this journey together and sculpt the future of technology!
+
+
+
         </p>
       </div>
       <div className="md:w-1/2 flex justify-center mb-8 md:mb-0 relative">
