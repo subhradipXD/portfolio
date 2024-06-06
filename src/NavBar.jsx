@@ -8,10 +8,11 @@ import ContactMe from "./ContactMe";
 import resume from "./assets/Subhradip Das CV_03_06.pdf";
 import ReactAudioPlayer from "react-audio-player";
 import song from "./assets/WhatsApp Audio 2024-05-23 at 14.11.55_d9ca3c52.mp3";
-import { CiMenuBurger } from "react-icons/ci";
+// import { CiMenuBurger } from "react-icons/ci";
 import { TfiClose } from "react-icons/tfi";
 import { useState } from "react";
 import { motion, useScroll } from "framer-motion";
+import { TbHexagonLetterS } from "react-icons/tb";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +37,10 @@ const NavBar = () => {
             className="nav-item transition-all duration-300 p-5 md:hidden fixed "
             onClick={toggleMenu}
           >
-            {isMenuOpen ? <TfiClose /> : <CiMenuBurger />}
+            {isMenuOpen ? <TfiClose /> :
+              // <CiMenuBurger />
+              <TbHexagonLetterS />
+            }
           </button>
           <ul
             className={`font-kalam md:flex justify-center space-x-4 p-4 group md:items-center ${isMenuOpen ? "flex flex-col mt-10 backdrop-blur-sm bg-white/30 text-black" : "hidden"
