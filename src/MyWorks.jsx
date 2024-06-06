@@ -27,9 +27,9 @@ const ProjectItem = ({
   return (
     <motion.div
       ref={ref}
-      initial={{ x: direction === "left" ? -100 : 100, opacity: 0 }}
+      initial={{ x: direction === "left" ? -250 : 250, opacity: 0 }}
       animate={inView ? { x: 0, opacity: 1 } : {}}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.4 }}
       className={`mb-6 hover:bg-indigo-900 p-4 rounded-lg transition-all duration-300 hover:scale-105`}
     >
       <h3 className="text-xl font-semibold">{name}</h3>

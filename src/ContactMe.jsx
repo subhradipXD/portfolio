@@ -51,7 +51,7 @@ const ContactMe = () => {
         </div>
       )}
       <section id="section7" className="p-8 rounded-lg w-full max-w-lg">
-        <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-125">
+        <h2 className="text-4xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-125">
           Contact Me
         </h2>
         <form

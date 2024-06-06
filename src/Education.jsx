@@ -1,4 +1,7 @@
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 const Education = () => {
+  const { ref, inView } = useInView();
   return (
     <div>
       <section
@@ -9,7 +12,12 @@ const Education = () => {
           My Education
         </h2>
         <div className="flex flex-col md:flex-row justify-center">
-          <div className="md:w-1/2 md:pr-4 mb-8 md:mb-0">
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 100 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
+            className="md:w-1/2 md:pr-4 mb-8 md:mb-0">
             <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg transition-all duration-300 hover:bg-opacity-20 hover:scale-105">
               <h3 className="text-xl font-semibold mb-2">
                 Heritage Institute of Technology, Kolkata – MAKAUT (2022 – 2024)
@@ -25,8 +33,13 @@ const Education = () => {
               <h4 className="text-lg mb-1">Bachelor of Computer Science</h4>
               <h5 className="text-sm">CGPA: 8.54/10</h5>
             </div>
-          </div>
-          <div className="md:w-1/2 md:pl-4">
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 100 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
+            className="md:w-1/2 md:pl-4">
             <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg transition-all duration-300 hover:bg-opacity-20 hover:scale-105">
               <h3 className="text-xl font-semibold mb-2">
                 Haldia Govt. Spon. Vivekananda Vidyabhaban, Purba Medinipur
@@ -45,7 +58,7 @@ const Education = () => {
               </h4>
               <h5 className="text-sm">Percentage: 83.20%</h5>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>

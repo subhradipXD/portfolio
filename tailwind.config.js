@@ -9,6 +9,20 @@ export default {
         kalam: ["Kalam"],
         handlee: ["Handlee"],
       },
+      keyframes: {
+        glow: {
+          '0%, 100%': { boxShadow: '0 0 20px 4px rgba(255, 105, 180, 0.5)' },
+          '50%': { boxShadow: '0 0 30px 10px rgba(255, 105, 180, 1)' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        glow: 'glow 2s ease-in-out infinite',
+        rotate: 'rotate 4s linear infinite',
+      },
     },
   },
   variants: {

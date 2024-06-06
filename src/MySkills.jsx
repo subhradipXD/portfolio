@@ -1,28 +1,36 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { FaNode } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
-import { FaPhp } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
+import { FaHtml5, FaReact, FaNode, FaCss3, FaPhp, FaJava, FaPython, FaBootstrap } from "react-icons/fa";
+import { SiMongodb, SiMysql, SiExpress } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiExpress } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaBootstrap } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const MySkills = () => {
+  const { ref: refAcademicSkills, inView: inViewAcademicSkills } = useInView();
+  const { ref: refDevSkills, inView: inViewDevSkills } = useInView();
+
+  const animationVariants = {
+    hidden: { opacity: 0, rotate: 0, scale: 0.5 },
+    visible: { opacity: 1, rotate: 360, scale: 1 },
+  };
+
   return (
     <section
       id="section5"
       className="p-8 text-white items-center justify-center overflow-hidden"
     >
-      <h2 className="text-3xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-125 animate-pulse">
+      <h2 className="text-4xl font-bold text-center mb-8 transition-all duration-300 hover:text-white hover:scale-125 animate-pulse">
         My Skills
       </h2>
       <div className="flex flex-wrap justify-center mt-10">
-        <div className="w-full md:w-1/2 md:pr-4 md:border-r border-gray-500 animate-slide-left overflow-hidden">
+        <motion.div
+          ref={refAcademicSkills}
+          initial="hidden"
+          animate={inViewAcademicSkills ? "visible" : "hidden"}
+          variants={animationVariants}
+          transition={{ duration: 1 }}
+          className="w-full md:w-1/2 md:pr-4 md:border-r border-gray-500 animate-slide-left overflow-hidden"
+        >
           <h3 className="text-2xl font-semibold mb-4 text-center transition-all duration-300 text-black hover:text-white hover:scale-125">
             My Academic Skills
           </h3>
@@ -46,8 +54,15 @@ const MySkills = () => {
               <IoLogoJavascript size={48} />
             </div>
           </div>
-        </div>
-        <div className="w-full md:w-1/2 md:pl-4 animate-slide-right overflow-hidden">
+        </motion.div>
+        <motion.div
+          ref={refDevSkills}
+          initial="hidden"
+          animate={inViewDevSkills ? "visible" : "hidden"}
+          variants={animationVariants}
+          transition={{ duration: 1 }}
+          className="w-full md:w-1/2 md:pl-4 md:border-l border-gray-500 animate-slide-right overflow-hidden"
+        >
           <h3 className="text-2xl font-semibold mb-4 text-center transition-all duration-300 text-black hover:text-white hover:scale-125">
             Development Skills
           </h3>
@@ -74,7 +89,7 @@ const MySkills = () => {
               <FaBootstrap size={48} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

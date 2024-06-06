@@ -13,7 +13,7 @@ const Hi = () => {
           <img
             src={myImg}
             alt="my image"
-            className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-2xl hover:shadow-fuchsia-900 hover:translate-y-[-10px] transition-all duration-500"
+            className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-2xl animate-glow hover:translate-y-[-20px] transition-all duration-500"
           />
         </div>
         <div className="md:w-1/2 md:mr-10 text-center md:text-left">
@@ -21,10 +21,10 @@ const Hi = () => {
             className="text-5xl font-bold mb-4 font-comic-neue"
             style={{ fontWeight: "normal" }}
           >
-            Life is simple{" "}
+            Eat 5 Star and{" "}
             <span className="text-red-500">
               <Typewriter
-                words={["Eat", "Sleep", "Code", "Repeat!"]}
+                words={["Dream", "Create", "Achieve", "Repeat!"]}
                 loop={0}
                 cursor
                 cursorStyle="|"
@@ -35,12 +35,7 @@ const Hi = () => {
             </span>
           </h1>
           <p className="text-lg mb-8 font-handlee">
-            Welcome, fellow code explorers! 🌍 I'm Subhradip, a Full Stack Web
-            Sorcerer on a quest to craft captivating digital realms. With
-            front-end enchantment and back-end wizardry, I weave immersive
-            experiences where every line holds magic. Join my mystical coding
-            journey!
-          </p>
+            Salutations, intrepid voyagers of the web! 👋 I'm Subhradip, your friendly neighborhood coder here to extend a hearty "Hi" as you grace my digital domain. Whether you're a seasoned developer or a curious newcomer, I'm thrilled to connect with you amidst the vast expanse of the internet. Let's embark on this coding adventure together and make waves in the ever-evolving landscape of technology!          </p>
         </div>
       </section>
     </>
