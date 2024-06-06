@@ -39,7 +39,7 @@ const NavBar = () => {
           >
             {isMenuOpen ? <TfiClose /> :
               // <CiMenuBurger />
-              <TbHexagonLetterS />
+              <TbHexagonLetterS className="text-2xl" />
             }
           </button>
           <ul
