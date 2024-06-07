@@ -57,7 +57,7 @@ const NavBar = () => {
                 duration={500}
                 onClick={closeMenu}
               >
-                Greetings
+                Welcome!
               </Link>
             </li>
             <li className="nav-item group-hover:blur-sm hover:!blur-none transition-all duration-300">

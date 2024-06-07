@@ -35,10 +35,10 @@ const Hi = () => {
             </span>
           </h1>
           <p className="text-lg mb-8 font-handlee">
-            Salutations, intrepid voyagers of the web!
-            👋 I'm your friendly neighborhood coder here to extend a hearty Welcome as you grace my digital domain.
-            Whether you're a seasoned developer or a curious newcomer, I'm thrilled to connect with you amidst the vast expanse of the internet.
-            Let's embark on this coding adventure together and make waves in the ever-evolving landscape of technology!
+            Hi! I'm Subhradip Das, a seasoned navigator of the digital realm,
+            armed with a BSC in Computer Science Honors (2022) and a Master's in Computer Application (2024).
+            My passion lies in the enchanting world of full-stack web development, where innovation meets functionality.
+            Let's embark on this journey together and sculpt the future of technology!
           </p>
         </div>
       </section>
