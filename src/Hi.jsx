@@ -17,12 +17,9 @@ const Hi = () => {
           />
         </div>
         <div className="md:w-1/2 md:mr-10 text-center md:text-left">
-          <h1
-            className="text-5xl font-bold mb-4 font-comic-neue"
-            style={{ fontWeight: "normal" }}
-          >
+          <h1 className="text-5xl font-bold mb-4 font-comic-neue" style={{ fontWeight: "normal" }}>
             Eat 5 Star and{" "}
-            <span className="text-red-500">
+            <span className="small-md:block custom-lg:block md:inline block text-red-500">
               <Typewriter
                 words={["Dream", "Create", "Achieve", "Repeat!"]}
                 loop={0}

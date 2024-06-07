@@ -9,12 +9,9 @@ const Welcome = () => {
       className="min-h-screen p-8 text-white flex flex-col-reverse md:flex-row items-center justify-center"
     >
       <div className="md:w-1/2 text-center md:text-left md:ml-10">
-        <h1
-          className="text-5xl font-bold mb-4 font-comic-neue"
-          style={{ fontWeight: "normal" }}
-        >
+        <h1 className="text-5xl font-bold mb-4 font-comic-neue" style={{ fontWeight: "normal" }}>
           Life is simple{" "}
-          <span className="text-red-500">
+          <span className="small-md:block custom-lg:block md:inline block text-red-500">
             <Typewriter
               words={["Eat", "Sleep", "Code", "Repeat!"]}
               loop={0}

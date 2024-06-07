@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'small-md': { 'min': '768px', 'max': '820px' },
+        'custom-lg': { 'min': '912px', 'max': '1024px' },
+      },
       fontFamily: {
         "comic-neue": ['"Comic Neue"', "cursive"],
         "roboto-serif": ['"Roboto Serif"', "serif"],
