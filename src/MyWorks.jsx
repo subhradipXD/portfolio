@@ -107,6 +107,7 @@ const MyWorks = () => {
             <div className="bg-transparent p-4 rounded-lg shadow-lg animate-fade-in">
               <AnimatePresence>
                 <ProjectItem
+                  key="UNIRECORD"
                   name="UNI-RECORD"
                   description="Responsive website for uploading various curricular activities details of an organization and based on that give rating to those organisations by the NAAC creation III"
                   technologies={[
@@ -121,6 +122,7 @@ const MyWorks = () => {
                   codeLink="https://github.com/subhradipXD/UNIRECORD"
                 />
                 <ProjectItem
+                  key="Mobile-Book"
                   name="Mobile-Book"
                   description="Responsive website for online mobile shopping"
                   technologies={[
@@ -135,6 +137,7 @@ const MyWorks = () => {
                   codeLink="https://github.com/subhradipXD/mobileStore"
                 />
                 <ProjectItem
+                  key="FundWise"
                   name="FundWise"
                   description="A responsive website for make a communication channel between entrepreneur and investor, to help entrepreneurs make their business grow"
                   technologies={[
@@ -160,6 +163,7 @@ const MyWorks = () => {
             <div className="bg-transparent p-4 rounded-lg shadow-lg animate-fade-in">
               <AnimatePresence>
                 <ProjectItem
+                  key="PortFolio"
                   name="PortFolio"
                   description="My Personal Portfolio Web Site"
                   technologies={["React", "Tailwind", "FramerMotion"]}
@@ -168,6 +172,7 @@ const MyWorks = () => {
                   codeLink="https://github.com/subhradipXD/portfolio"
                 />
                 <ProjectItem
+                  key="tic-tac-toe"
                   name="tic-tac-toe"
                   description="A web based tic-tac-toe game"
                   technologies={["React", "Javascript", "CSS"]}
@@ -176,6 +181,7 @@ const MyWorks = () => {
                   codeLink="https://github.com/subhradipXD/tic-tac-toe"
                 />
                 <ProjectItem
+                  key="WeatherApp"
                   name="WeatherApp"
                   description="A simple website using open-weather api to check your city's weather."
                   technologies={["React", "Javascript", "Bootstrap"]}
@@ -184,6 +190,7 @@ const MyWorks = () => {
                   codeLink="https://github.com/subhradipXD/weather-app"
                 />
                 <ProjectItem
+                  key="TaskManager"
                   name="TaskManager"
                   description="A simple website for create your own todo list and tack record."
                   technologies={[
