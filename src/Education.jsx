@@ -23,7 +23,7 @@ const Education = () => {
                 Heritage Institute of Technology, Kolkata – MAKAUT (2022 – 2024)
               </h3>
               <h4 className="text-lg mb-1">Master of Computer Application</h4>
-              <h5 className="text-sm">CGPA: 7.12/10</h5>
+              <h5 className="text-sm">DGPA: 7.32/10</h5>
             </div>
             <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg mt-4 transition-all duration-300 hover:bg-opacity-20 hover:scale-105">
               <h3 className="text-xl font-semibold mb-2">
