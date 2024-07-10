@@ -4,6 +4,8 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { IoLogoFirebase } from "react-icons/io5";
+
 
 const MySkills = () => {
   const { ref: refAcademicSkills, inView: inViewAcademicSkills } = useInView();
@@ -87,6 +89,9 @@ const MySkills = () => {
             </div>
             <div className="p-4 m-2 bg-purple-500 rounded-lg shadow-md transition-all duration-300 animate-bounce hover:animate-pulse hover:scale-110">
               <FaBootstrap size={48} />
+            </div>
+            <div className="p-4 m-2 bg-orange-600 rounded-lg shadow-md transition-all duration-300 animate-bounce hover:animate-pulse hover:scale-110">
+              <IoLogoFirebase size={48} />
             </div>
           </div>
         </motion.div>

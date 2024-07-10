@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { IoLogoFirebase } from "react-icons/io5";
 import {
   FaReact,
   FaNodeJs,
@@ -60,6 +61,9 @@ const ProjectItem = ({
         )}
         {technologies.includes("FramerMotion") && (
           <TbBrandFramerMotion className="mr-2 text-xl" />
+        )}
+        {technologies.includes("Firebase") && (
+          <IoLogoFirebase className="mr-2 text-xl" />
         )}
       </div>
       <div className="mt-4">
@@ -205,6 +209,14 @@ const MyWorks = () => {
                   ]}
                   direction="right"
                   codeLink="https://github.com/subhradipXD/TaskMaster"
+                />
+                <ProjectItem
+                  key="NUXBUY"
+                  name="NUXBUY"
+                  description="An E-Commerce website for shopping using fake-store api with rozarpay payment integration."
+                  technologies={["React", "Javascript", "Tailwind", "Firebase"]}
+                  direction="right"
+                  codeLink="https://github.com/subhradipXD/NUXBUY"
                 />
               </AnimatePresence>
             </div>
